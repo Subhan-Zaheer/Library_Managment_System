@@ -87,14 +87,20 @@ class Library:
         pass
 
     def add_books(self):
-
+        """
+        This function will facilitate if you want to add a new book in your library.
+        :return: None
+        """
         print("\nIt is add books function.\n")
         book_name = input("Enter book name : ")
         self.ls.append(book_name)
         print("\n", self.ls, "\n")
 
     def return_books(self):
-
+        """
+        This function will facilitate if someone wants to return a borrowed book.
+        :return: None
+        """
         print("\nIt is return books function.\n")
         name = input("Enter your full name : ")
         book_name = input("Enter book name : ")
@@ -109,11 +115,17 @@ class Library:
         pass
 
     def __repr__(self):
+        """
+        It is a dunder function which will display credentials of Library.
+        :return:
+        """
         print(f"Name of Library is {self.libraryName} and books you entered in library are {self.ls}")
 
 
 if __name__ == '__main__':
-
+    """
+    This is the main function which will perform the functionality of this program.
+    """
     lib_name = input("Now enter your library name : ")
     book_ls = []
     print("Enter a list of book you want to store in library.")
