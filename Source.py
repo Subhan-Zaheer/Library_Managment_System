@@ -18,13 +18,20 @@ class Library:
     libraryName = []
 
     def __init__(self, alist, alibraryname):
-
+        """
+        It is a constructor of this class.
+        :param alist: List of books
+        :param alibraryname: Name of library
+        """
         self.ls = alist
         self.libraryName = alibraryname
         self.dict = {}
 
     def display_books(self):
-
+        """
+        This function will display all the books in library.
+        :return: None
+        """
         print("\nIt is display function.\n")
         print("Following are the books in your library : ")
         print(self.ls)
@@ -32,14 +39,22 @@ class Library:
         pass
 
     def dict_maintain(self, aname, abook):
-
+        """
+        This function will maintain the book being borrowed.
+        :param aname: Name of person who borrowed the book.
+        :param abook: Name of book being borrowed.
+        :return: None
+        """
         print("\nIt is dictionary maintain function.\n")
         self.dict[aname] = abook
         print("\n", self.dict, "\n")
         pass
 
     def lend_books(self):
-
+        """
+        This function will facilitate if someone wants to borrow a book.
+        :return: None
+        """
         print("\nIt is lend books function.\n")
         index = 0
         found = 0
